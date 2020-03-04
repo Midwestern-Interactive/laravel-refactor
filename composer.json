@@ -1,0 +1,27 @@
+{
+    "name": "mwi/laravel-refactor",
+    "description": "Package to help refactor data in staging and production environments.",
+    "keywords": ["database", "refactor", "laravel"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ryan Doss",
+            "email": "rd@buildmidwestern.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": { "MWI\\LaravelRefactor\\": "src/" }
+    },
+    "config": {
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "optimize-autoloader": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "MWI\\LaravelRefactor\\ServiceProvider"
+            ]
+        }
+    }
+}
